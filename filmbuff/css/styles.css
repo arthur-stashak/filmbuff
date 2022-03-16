@@ -1,0 +1,26 @@
+body, button, input {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  background-color: #F5F9F9;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
