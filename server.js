@@ -33,11 +33,4 @@ http.createServer((request, response) => {
   });
 
 }).listen(8080);
-console.log("My test server is running on Port 8080.");
-
-
-console.log(q.host); // returns 'localhost:8080'
-console.log(q.pathname); // returns '/default.html'
-console.log(q.search);
 console.log("My first Node test server is running on Port 8080");
-console.log("File content: " + data.toString)
