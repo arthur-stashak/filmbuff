@@ -55,14 +55,6 @@ let topMovies = [
   }
 ];
 
-app.get('/', (req, res) => {
-  res.send('My top ten Movies!');
-});
-
-app.get('/documentation', (req, res) => {
-  res.sendFile('public/documentation.html', { root: __dirname });
-});
-
 app.get('/movies', (req, res) => {
   res.json(topmovies);
 });
