@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,6 +21,18 @@
           <li>Create your own 'To Watch' and 'Favorite Movies' list</li>
         </ul>
       <h2>Download and sign up through our 'FilmBuff' app today to become apart of the our many film enthusiasts!</h2>
+      <p></p>
+      <ul>
+        <li>GET-Return a list of ALL movies to the user: /movies</li>
+        <li>GET-Return data (description, genre, director, image URL, whether it’s featured or not) about a single movie by title to the user: /movies/:title</li>
+        <li>GET-Return data about a genre (description) by name/title (e.g., “Thriller”): /movies/genre/:genreName</li>
+        <li>GET-Return data about a director (bio, birth year, death year) by name: /movies/directors/:directorName</li>
+        <li>POST-Allow new users to register: /users</li>
+        <li>PUT-Allow users to update their user info (username): /users/:id</li>
+        <li>PUT-Allow users to add a movie to their list of favorites: /users/:id/:movieTitle</li>
+        <li>DELETE-Allow users to remove a movie from their list of favorites: /users/:id/:movieTitle</li>
+        <li>DELETE-Allow existing users to deregister: /users/:id</li>
+      </ul>
     </div>
   </body>
 </html>
