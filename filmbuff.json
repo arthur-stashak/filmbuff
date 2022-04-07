@@ -1,0 +1,4 @@
+{"_id":{"$oid":"62446b3d4828796de3d30638"},"username":"Bob_schmob","password":"1234","email":"bob@gmail.com","birth_date":"1985-09-16","favoriteMovies":[{"$oid":"624460ed0e74f19b525e06a5"}]}
+{"_id":{"$oid":"62446b574828796de3d30639"},"username":"steph23","password":"4321","email":"steph@gmail.com","birth_date":"2001-12-23","favoriteMovies":["The Shawshank Redemption",{"$oid":"624460ce0e74f19b525e06a4"}]}
+{"_id":{"$oid":"62446b694828796de3d3063a"},"username":"Taxmax12","password":"1357","email":"max@gmail.com","birth_date":"1924-05-19","favoriteMovies":["The Dark Knight",{"$oid":"624460b50e74f19b525e06a3"}]}
+{"_id":{"$oid":"62446b8c4828796de3d3063c"},"username":"Mikeike","password":"0987","email":"mike@gmail.com","birth_date":"1985-05-23","favoriteMovies":{"$oid":"624460b50e74f19b525e06a3"}}
