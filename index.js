@@ -10,7 +10,8 @@ const app = express();
 const Movies = Models.Movie;
 const Users = Models.User;
 
-mongoose.connect('mongodb://localhost:27017/filmbuffDB', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect('mongodb://localhost:27017/filmbuffDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect( process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
 
@@ -103,7 +104,7 @@ app.post('/users',
 
 
 //UPDATE
-app.put('/users/:username', (req, res) => {
+app.put('/users/:username', passport.authenticate('jwt', { session: false}), (req, res) => {
   Users.findOneAndUpdate(
     {username: req.params.username }, { $set:
       {
@@ -137,7 +138,7 @@ app.delete('/users/:username/:movieID', (req, res) => {
     })
 
 // Delete a user by username
-app.delete('/users/:username', (req, res) => {
+app.delete('/users/:username', passport.authenticate('jwt', { session: false}), (req, res) => {
   Users.findOneAndRemove({ username: req.params.username })
     .then((user) => {
       if (!user) {
