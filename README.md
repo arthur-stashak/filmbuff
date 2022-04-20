@@ -12,13 +12,13 @@ Download and sign up through our 'FilmBuff' app today to become apart of the our
 
 ## Endpoints
 
-GET-Return a list of ALL movies to the user: /movies
-GET-Return data (description, genre, director, image URL, whether it’s featured or not) about a single movie by title to the user: /movies/:title
-GET-Return data about a genre (description) by name/title (e.g., “Thriller”): /movies/genre/:genre
-GET-Return data about a director (bio, birth year, death year) by name: /movies/directors/:director
-POST-Allow new users to register: /users
-POST- Allow users to login to their account: /login
-POST-Allow users to add a movie to their list of favorites: /users/:username/movies/:movieID
-PUT-Allow users to update their user info (username): /users/:id
-DELETE-Allow users to remove a movie from their list of favorites: /users/:username/:movieID
-DELETE-Allow existing users to deregister: /users/:id
+- GET-Return a list of ALL movies to the user: /movies
+- GET-Return data (description, genre, director, image URL, whether it’s featured or not) about a single movie by title to the user: /movies/:title
+- GET-Return data about a genre (description) by name/title (e.g., “Thriller”): /movies/genre/:genre
+- GET-Return data about a director (bio, birth year, death year) by name: /movies/directors/:director
+- POST-Allow new users to register: /users
+- POST- Allow users to login to their account: /login
+- POST-Allow users to add a movie to their list of favorites: /users/:username/movies/:movieID
+- PUT-Allow users to update their user info (username): /users/:id
+- DELETE-Allow users to remove a movie from their list of favorites: /users/:username/:movieID
+- DELETE-Allow existing users to deregister: /users/:id
