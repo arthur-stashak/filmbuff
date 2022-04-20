@@ -99,10 +99,6 @@ app.post('/users',
     });
   });
 
-
-
-
-
 //UPDATE
 app.put('/users/:username', passport.authenticate('jwt', { session: false}), (req, res) => {
   Users.findOneAndUpdate(
@@ -156,7 +152,7 @@ app.delete('/users/:username', passport.authenticate('jwt', { session: false}), 
 
 //READ
   // Get all users
-app.get('/users', (req,res) => {
+app.get('/users', passport.authenticate('jwt', { session: false}), (req,res) => {
   Users.find()
     .then((user) => {
       res.status(201).json(user);
